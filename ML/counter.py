@@ -62,6 +62,7 @@ class RoomCounter:
     def increment(self):
         self.count += 1
         self.total_entries += 1
+        self.max_count = max(self.max_count, self.count)  # Update peak immediately
         self._update_history()
         self.entry_exit_history.append({
             'timestamp': datetime.now().isoformat(),

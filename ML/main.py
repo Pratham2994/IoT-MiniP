@@ -75,7 +75,7 @@ async def update(event: str):
             print("Exit detected when count is zero.")
             message_to_broadcast = {"type": "warning", "message": "Exit detected, but room is already empty."}
     
-    # Broadcast the appropriate message if one was generated
+    # Broadcast the appropriate message if one was generatedi
     if message_to_broadcast:
         await broadcast_message(message_to_broadcast)
         
