@@ -1,0 +1,6 @@
+[wokwi]
+version = 1
+board = "mega"
+firmware = "wokwi.ino.hex"
+elf = "wokwi.ino.elf"
+rfc2217ServerPort = "4000"
